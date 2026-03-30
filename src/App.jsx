@@ -1,14 +1,14 @@
-
-import './App.css'
+import "./App.css";
+import Banner from "./Component/Banner";
+import Navbar from "./Component/Navbar";
 
 function App() {
-
   return (
     <div>
-      <h2 className='text-red-500 font-bold text-3xl'>Assignment 6</h2>
-      
+      <Navbar />
+      <Banner />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
