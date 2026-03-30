@@ -31,14 +31,14 @@ const Banner = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-6 w-full max-w-md sm:max-w-none mx-auto">
-            <button className="w-full sm:w-auto bg-linear-to-bl from-violet-500 to-fuchsia-500 transition-all px-8 py-4 rounded-2xl font-bold shadow-xl flex items-center justify-center gap-3 group text-white active:scale-95">
+            <button className="w-full sm:w-auto bg-linear-to-br from-violet-900 to-fuchsia-500 transition-all px-8 py-4 rounded-2xl font-bold shadow-xl flex items-center justify-center gap-3 group text-white active:scale-95">
               Explore Products
             </button>
 
             <button className="relative w-full sm:w-auto p-[1.5px] rounded-2xl transition-all shadow-lg group active:scale-95">
-              {/* Gradient Border Background */}
-              <div className="absolute inset-0 bg-linear-to-bl from-violet-500 to-fuchsia-500 rounded-2xl"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-violet-900 to-fuchsia-500 rounded-2xl"></div>
 
+              {/* Button Inner Content */}
               <div className="relative px-8 py-[14px] bg-white rounded-[14px] flex items-center justify-center gap-3 transition-all">
                 <span className="group-hover:translate-x-1 transition-transform duration-300">
                   <img
@@ -48,7 +48,7 @@ const Banner = () => {
                   />
                 </span>
 
-                <span className="font-semibold bg-linear-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
+                <span className="font-semibold bg-linear-to-br from-violet-900 to-fuchsia-500 bg-clip-text text-transparent">
                   Watch Demo
                 </span>
               </div>

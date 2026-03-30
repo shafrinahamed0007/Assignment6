@@ -2,13 +2,13 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar  md:w-9/12 mx-auto">
+    <div className="navbar md:w-10/12 mx-auto">
       <div className="navbar-start">
-        <div className="flex items-center gap-1 font-bold text-3xl bg-linear-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
+        <div className="flex items-center gap-1 font-bold text-3xl bg-linear-to-br from-violet-900 to-fuchsia-500 bg-clip-text text-transparent">
           DigiTools
         </div>
       </div>
-      <div className="navbar-center hidden md:flex">
+      <div className="navbar-center hidden md:hidden lg:flex">
         <ul className="menu menu-horizontal gap-10 px-1 text-lg">
           <li>
             <a>Products</a>
@@ -47,7 +47,7 @@ const Navbar = () => {
           <span className="badge badge-sm indicator-item ">0</span>
         </div>
         <h2 className="mx-2">Login</h2>
-        <a className="btn bg-linear-to-bl from-violet-500 to-fuchsia-500 rounded-full text-white">
+        <a className="btn bg-linear-to-br from-violet-900 to-fuchsia-500 rounded-full text-white">
           Get in Touch
         </a>
       </div>
