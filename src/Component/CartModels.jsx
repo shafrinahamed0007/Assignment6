@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
-const CartModels = ({ data }) => {
+const CartModels = ({ data, carts, setCarts }) => {
   const [buyNow, setBuyNow] = useState(false);
   const handleBuyNow = () => {
     setBuyNow(true);
+    setCarts([...carts, data])
     toast.success(`${data.name} added to cart`);
   };
   return (

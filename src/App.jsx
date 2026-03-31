@@ -20,9 +20,10 @@ const dataPromise = getData();
 
 function App() {
   const [activeTab, setActiveTab] = useState("product");
+  const [carts, setCarts] = useState([]);
   return (
     <div>
-      <Navbar />
+      <Navbar cartCount={carts.length} />
       <Banner />
       <Rating />
       {/* name of each tab group should be unique */}
@@ -38,13 +39,13 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-           className={`tab rounded-full bg-linear-to-br w-40 ${activeTab == "cart" ? "from-violet-900 to-fuchsia-500 text-white" : ""}`}
-          aria-label="Cart"
+          className={`tab rounded-full bg-linear-to-br w-40 ${activeTab == "cart" ? "from-violet-900 to-fuchsia-500 text-white" : ""}`}
+           aria-label={`Cart (${carts.length})`}
           onClick={() => setActiveTab("cart")}
         />
       </div>
-      {activeTab === "product" && <Models dataPromise={dataPromise} />}
-      {activeTab === "cart" && <Cart />}
+      {activeTab === "product" && <Models dataPromise={dataPromise} carts={carts} setCarts={setCarts} />}
+      {activeTab === "cart" && <Cart carts={carts} setCarts={setCarts} />}
 
       <Started />
       <Pricing />
