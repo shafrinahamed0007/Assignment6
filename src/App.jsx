@@ -3,6 +3,7 @@ import Banner from "./Component/Banner";
 import Navbar from "./Component/Navbar";
 import Rating from "./Component/Rating";
 import Started from "./Component/Started";
+import Pricing from "./Pricing";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Banner />
       <Rating />
       <Started />
+      <Pricing />
     </div>
   );
 }
