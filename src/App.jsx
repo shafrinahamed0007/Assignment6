@@ -27,7 +27,7 @@ function App() {
       <Banner />
       <Rating />
       {/* name of each tab group should be unique */}
-      <div className="mb-[40px] mt-4 tabs w-11/12 md:w-3/12 bg-transparent mx-auto tabs-box justify-center rounded-full border-2 border-zinc-300 ">
+      <div className="mb-[40px] mt-4 tabs w-11/12 md:w-4/12 bg-transparent mx-auto tabs-box justify-center rounded-full border-2 border-zinc-300 ">
         <input
           type="radio"
           name="my_tabs_1"
