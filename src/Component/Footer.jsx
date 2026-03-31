@@ -74,7 +74,7 @@ const Footer = () => {
         <aside className="footer  bg-[#101727] text-base-content border-base-300 border-t text-white px-10 py-4">
           <div className="md:flex justify-between items-center w-full">
             <p>© {new Date().getFullYear()} Digitools. All rigths reserved</p>
-            <div className="grid md:grid-cols-3 gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
               <p>Privacy Policy</p>
               <p>Terms of Service</p>
               <p>Cookies</p>

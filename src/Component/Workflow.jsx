@@ -18,7 +18,7 @@ const Workflow = () => {
           <div className="flex w-11/12 md:w-6/12 mx-auto flex-col sm:flex-row gap-4  max-w-md sm:max-w-none ">
             
 
-            <button className="relative w-full sm:w-auto p-[1.5px] rounded-2xl transition-all shadow-lg group active:scale-95">
+            <button className="relative  sm:w-auto p-[1.5px] rounded-2xl transition-all shadow-lg group active:scale-95">
               <div className="absolute inset-0 bg-linear-to-br from-violet-900 to-fuchsia-500 rounded-2xl"></div>
 
               {/* Button Inner Content */}
@@ -33,6 +33,7 @@ const Workflow = () => {
             <button className="border  border-zinc-100 rounded-2xl p-4">
                 View Pricing
             </button>
+            
           </div>
         </div>
       </div>
