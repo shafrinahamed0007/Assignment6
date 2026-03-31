@@ -2,6 +2,7 @@ import "./App.css";
 import Banner from "./Component/Banner";
 import Navbar from "./Component/Navbar";
 import Rating from "./Component/Rating";
+import Started from "./Component/Started";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Banner />
       <Rating />
+      <Started />
     </div>
   );
 }
