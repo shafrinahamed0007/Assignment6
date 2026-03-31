@@ -3,7 +3,7 @@ import React from "react";
 const Pricing = () => {
   return (
     <div className="mt-[70px] mb-[70px] ">
-      <div className="w-11/12 mx-auto h-full  justify-center items-center">
+      <div className="w-10/12 mx-auto h-full  justify-center items-center">
         <div className="text-center">
           <h2 className="text-[#101727] font-extrabold text-2xl md:text-[48px]">
             Simple, Transparent Pricing

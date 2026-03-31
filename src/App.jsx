@@ -7,6 +7,8 @@ import Started from "./Component/Started";
 import Pricing from "./Component/Pricing";
 import Workflow from "./Component/Workflow";
 import Models from "./Component/Models";
+import Cart from "./Component/Cart";
+import { useState } from "react";
 
 const getData = async () => {
   const res = await fetch("./data.json");
@@ -17,12 +19,32 @@ const dataPromise = getData();
 // console.log(dataPromise);
 
 function App() {
+  const [activeTab, setActiveTab] = useState("product");
   return (
     <div>
       <Navbar />
       <Banner />
       <Rating />
-      <Models dataPromise={dataPromise} />
+      {/* name of each tab group should be unique */}
+      <div className="mb-[40px] mt-4 tabs w-11/12 md:w-3/12 bg-transparent mx-auto tabs-box justify-center rounded-full border-2 border-zinc-300 ">
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className={`tab rounded-full bg-linear-to-br w-40 ${activeTab == "product" ? "from-violet-900 to-fuchsia-500 text-white" : ""}`}
+          aria-label="Products"
+          onClick={() => setActiveTab("product")}
+          defaultChecked
+        />
+        <input
+          type="radio"
+          name="my_tabs_1"
+           className={`tab rounded-full bg-linear-to-br w-40 ${activeTab == "cart" ? "from-violet-900 to-fuchsia-500 text-white" : ""}`}
+          aria-label="Cart"
+          onClick={() => setActiveTab("cart")}
+        />
+      </div>
+      {activeTab === "product" && <Models dataPromise={dataPromise} />}
+      {activeTab === "cart" && <Cart />}
 
       <Started />
       <Pricing />
