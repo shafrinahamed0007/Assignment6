@@ -40,11 +40,13 @@ function App() {
           type="radio"
           name="my_tabs_1"
           className={`tab rounded-full bg-linear-to-br w-40 ${activeTab == "cart" ? "from-violet-900 to-fuchsia-500 text-white" : ""}`}
-           aria-label={`Cart (${carts.length})`}
+          aria-label={`Cart (${carts.length})`}
           onClick={() => setActiveTab("cart")}
         />
       </div>
-      {activeTab === "product" && <Models dataPromise={dataPromise} carts={carts} setCarts={setCarts} />}
+      {activeTab === "product" && (
+        <Models dataPromise={dataPromise} carts={carts} setCarts={setCarts} />
+      )}
       {activeTab === "cart" && <Cart carts={carts} setCarts={setCarts} />}
 
       <Started />
