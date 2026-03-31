@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar md:w-10/12 mx-auto">
+    <div className="navbar md:w-11/12 mx-auto">
       <div className="navbar-start">
         <div className="flex items-center gap-1 font-bold text-3xl bg-linear-to-br from-violet-900 to-fuchsia-500 bg-clip-text text-transparent">
           DigiTools

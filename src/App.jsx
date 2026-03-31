@@ -1,9 +1,10 @@
 import "./App.css";
 import Banner from "./Component/Banner";
+import Footer from "./Component/Footer";
 import Navbar from "./Component/Navbar";
 import Rating from "./Component/Rating";
 import Started from "./Component/Started";
-import Pricing from "./Pricing";
+import Pricing from "./Component/Pricing";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Rating />
       <Started />
       <Pricing />
+      <Footer />
     </div>
   );
 }
