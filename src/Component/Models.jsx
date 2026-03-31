@@ -7,8 +7,12 @@ const Models = ({ dataPromise, carts, setCarts }) => {
   return (
     <div>
       {/* text content */}
-      <div></div>
+      <div>
+        
+      </div>
       {/* main content */}
+      
+      
       <div className="grid md:w-10/12 mx-auto gap-[30px] md:grid-cols-2 lg:grid-cols-3  ">
         {datas.map((data) => (
          <CartModels key={data.id} data={data} carts={carts} setCarts={setCarts} />

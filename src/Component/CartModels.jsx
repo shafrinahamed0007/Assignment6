@@ -26,7 +26,9 @@ const CartModels = ({ data, carts, setCarts }) => {
     toast.success(`${data?.name} added successfully!`);
   };
   return (
+    
     <div>
+      
       <div className="card md:w-96 bg-base-100 shadow-sm p-5 rounded-[30px]  ">
         <div className="card-body">
           <div className="flex justify-between">

@@ -26,6 +26,14 @@ function App() {
       <Navbar cartCount={carts.length} />
       <Banner />
       <Rating />
+       <div className="text-center mt-[70px]">
+          <h2 className="text-[#101727] font-extrabold text-3xl md:text-[48px]">
+           Premium Digital Tools
+          </h2>
+          <p className="text-[#627382] mt-4">
+            Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.
+          </p>
+        </div>
       {/* name of each tab group should be unique */}
       <div className="mb-[40px] mt-4 tabs w-11/12 md:w-4/12 bg-transparent mx-auto tabs-box justify-center rounded-full ">
         <input
