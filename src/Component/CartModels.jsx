@@ -1,12 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 const CartModels = ({ data, carts, setCarts }) => {
   const [buyNow, setBuyNow] = useState(false);
+
+  useEffect(() => {
+    const isFound = carts.find((item) => item.id === data.id);
+    if (isFound) {
+      setBuyNow(true);
+    } else {
+      setBuyNow(false);
+    }
+  }, [carts, data.id]);
+
   const handleBuyNow = () => {
+    const isFound = carts.find((item) => item.id === data.id);
+
+    if (isFound) {
+      toast.warning(`${data?.name} already in cart`);
+      return;
+    }
+
+    setCarts([...carts, data]);
     setBuyNow(true);
-    setCarts([...carts, data])
-    toast.success(`${data.name} added to cart`);
+    toast.success(`${data?.name} added successfully!`);
   };
   return (
     <div>
@@ -45,7 +62,7 @@ const CartModels = ({ data, carts, setCarts }) => {
           </ul>
           <button
             onClick={handleBuyNow}
-            className={`w-full sm:w-auto bg-linear-to-br mt-4 ${buyNow ?  "from-violet-400 to-fuchsia-500 ":"from-violet-900 to-fuchsia-500"} transition-all px-8 py-4 rounded-2xl font-bold shadow-xl flex items-center justify-center gap-3 group text-white active:scale-95`}
+            className={`w-full sm:w-auto bg-linear-to-br mt-4 ${buyNow ? "from-violet-400 to-fuchsia-500 " : "from-violet-900 to-fuchsia-500"} transition-all px-8 py-4 rounded-2xl font-bold shadow-xl flex items-center justify-center gap-3 group text-white active:scale-95`}
           >
             {buyNow ? "Already Buy" : "Buy Now"}
           </button>
