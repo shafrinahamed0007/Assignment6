@@ -1,37 +1,32 @@
 # 🛠️ DigiTools | Modern Digital Marketplace
 
-**DigiTools** provides a seamless experience for browsing digital products and managing your shopping cart. Built with speed and responsiveness in mind, this project showcases a clean UI/UX following modern design principles.
+
+**DigiTools** হলো একটি আধুনিক ডিজিটাল প্রোডাক্ট শোকেস এবং কার্ট ম্যানেজমেন্ট অ্যাপ্লিকেশন। এটি ইউজারদের জন্য একটি নিরবচ্ছিন্ন ব্রাউজিং অভিজ্ঞতা প্রদান করে যেখানে তারা সহজেই প্রোডাক্ট পছন্দ করতে পারে এবং রিয়েল-টাইম ফিডব্যাকের মাধ্যমে শপিং কার্ট পরিচালনা করতে পারে।
 
 ---
 
-## 🛠️ Core Technologies Used
+## 🛠️ Built With
 
-The project is built with a focus on performance, clean code, and modern styling:
+এই প্রজেক্টটিতে আধুনিক ওয়েব টেকনোলজির সমন্বয় ঘটানো হয়েছে:
 
-* **React.js:** Leveraging Functional Components and Hooks for dynamic state management.
-* **Tailwind CSS & DaisyUI:** Used for a modern, utility-first design and pre-built aesthetic components to ensure a professional Figma-accurate look.
-* **JavaScript (ES6+):** Clean and optimized logic for data filtering, cart calculations, and event handling.
-* **React-Toastify:** Integrated for professional, real-time user feedback (Success/Error/Warning alerts).
-* **JSON (Product Data):** All product information is managed through a structured JSON schema, including unique IDs, tags, features, and pricing models.
+* **React.js:** ডায়নামিক ইউজার ইন্টারফেস এবং স্টেট ম্যানেজমেন্টের জন্য।
+* **Tailwind CSS & DaisyUI:** দ্রুত স্টাইলিং এবং পিক্সেল-পারফেক্ট Figma ডিজাইনের জন্য।
+* **JavaScript (ES6+):** কার্ট লজিক এবং ডেটা হ্যান্ডলিং এর জন্য ক্লিন এবং মডার্ন সিনট্যাক্স।
+* **React-Toastify:** ইউজার অ্যাকশনগুলোর (Add/Remove/Checkout) জন্য প্রফেশনাল পপ-আপ নোটিফিকেশন।
+* **JSON Data:** সমস্ত প্রোডাক্ট ইনফরমেশন (Price, Tags, Features) ডায়নামিকভাবে JSON থেকে রেন্ডার করা হয়েছে।
 
 ---
 
 ## ✨ Key Features
 
-### 1. Advanced Cart Logic & Real-time Feedback
-Integrated **React-Toastify** to provide instant alerts when adding or removing items. The cart count in the Navbar updates dynamically, and the "Proceed to Checkout" action provides a clean reset of all states with a single click.
+### 1. Smart Cart Management & Notifications
+কার্টে প্রোডাক্ট যোগ করার সাথে সাথে নেভবারের কাউন্টার আপডেট হয়। **React-Toastify** ব্যবহারের মাধ্যমে প্রতিটি অ্যাকশনে (যেমন: Added to Cart, Removed, বা Checkout) ইউজারকে ইনস্ট্যান্ট ফিডব্যাক দেওয়া হয়।
 
-### 2. Dynamic Component Toggling
-Implemented a centralized toggle system that allows users to switch between the **Product Grid** (3-column layout) and the **Shopping Cart** (list layout). This ensures a clutter-free experience and better focus on the user's intent.
+### 2. Dynamic Toggling & Layout
+ইউজাররা এক ক্লিকেই **Product Section** (৩-কলাম গ্রিড) এবং **Cart Section** (১-কলাম লিস্ট) এর মধ্যে সুইচ করতে পারেন। এটি ইউজার এক্সপেরিয়েন্সকে অনেক বেশি সহজ এবং কার্যকর করে তোলে।
 
-### 3. Data-Driven Product Cards
-Each product is rendered from a local **JSON database**, showcasing price variations (Monthly/Yearly), custom tags (Popular/Best Seller), and an array-based feature list to help users make informed decisions.
+### 3. Fully Responsive & Data-Driven UI
+মোবাইল থেকে ডেস্কটপ—সব ডিভাইসেই এটি চমৎকারভাবে কাজ করে। কার্ডগুলোতে আলাদা আলাদা ট্যাগ (Popular/New), প্রাইসিং পিরিয়ড এবং ফিচার লিস্ট ডায়নামিকভাবে প্রদর্শিত হয়, যা একটি রিয়েল-ওয়ার্ল্ড ই-কমার্স ফিল দেয়।
 
----
 
-## 🚀 Challenges Overcome
-
-* **Selected Product Removal:** Developed a filtering logic to remove specific items from the cart while maintaining the state of other selected products.
-* **Responsive Architecture:** Ensured the 3-column product grid adapts perfectly to 1-column layouts on mobile devices using Tailwind's responsive prefixes.
-* **Toast Integration:** Customizing Toastify to match the brand identity of DigiTools for actions like "Added to Cart" and "Cart Cleared."
 
